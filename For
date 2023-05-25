@@ -1,0 +1,31 @@
+class Main {
+  public static void main(String[] args) {
+   for(int cont=0; cont <10; cont++){
+     System.out.println("oi " + cont);
+\\ essa função me mostrou a contagem de oi em uma tela, isso é uma estrutura de repetição   
+}    
+  }
+}
+while
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    int opcao =0;
+    while(opcao != 99){
+      System.out.println("Digite um valor ou 99 para sair");
+      Scanner entrada= new Scanner(System.in);
+      opcao=entrada.nextInt();
+    }
+    
+  }
+}
+do while
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+  int opcao;
+    do{
+      System.out.println("Digite um valor qualquer ou 99 para sair");
+      Scanner entrada=new Scanner(System.in);
+      opcao = entrada.nextInt();
+    }while(opcao !=99);
