@@ -1,0 +1,53 @@
+import java.util.Scanner;
+import java.util.Random;
+
+class Main {
+  public static void main(String[] args) {
+  Scanner entrada = new Scanner(System.in);
+  System.out.println("Seja Bem Vindo escolha o nivel do jogo");
+  System.out.println("1 -Nivel Facil");
+  System.out.println("2 -Nivel Medio");
+  System.out.println("3 -Nivel Dificil");
+  int numero= entrada.nextInt();
+ switch (numero){
+  case 1:
+    System.out.println("Digite um numero de 0 a 10");
+        entrada.nextInt(); 
+        Random gerador= new Random();
+        int x = gerador.nextInt(10);
+        if(numero ==x){
+       System.out.println("Parabens vc acertou");
+        }
+        else{
+       System.out.println("Não foi dessa vez o numero era" + x);
+        } 
+  break;
+  case 2:
+  System.out.println("Digite um numero de 0 a 20");
+        entrada.nextInt(); 
+        Random gerador2= new Random();
+        int y = gerador2.nextInt(20);
+        if(numero ==y){
+        System.out.println("Parabens vc acertou");
+        }
+        else{
+       System.out.println("Não foi dessa vez o numero era"  +  y );
+        } 
+  break;
+  case 3:
+    System.out.println("Digite um numero de 0 a 30");
+     entrada.nextInt(); 
+        Random gerador3= new Random();
+        int a = gerador3.nextInt(20);
+        if(numero ==a){
+        System.out.println("Parabens vc acertou");
+        }
+        else{
+       System.out.println("Não foi dessa vez o numero era"  +  a );
+        } 
+  break;
+  default:
+    System.out.println("digite um numero de 1 a 3 ");
+  }
+    }
+}
