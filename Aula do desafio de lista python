@@ -1,0 +1,33 @@
+Total_de_Alunos = 3
+nome = []
+i = 0
+cpf = []
+email = []
+matricula = []
+notas1 = 0
+notas2= 0
+notas3 = 0
+notas4 = 0 
+media = []
+media_final = 0
+
+while i < Total_de_Alunos:
+    nome.append(input("Digite o nome do aluno: "))
+    cpf.append(input("Digite o cpf do aluno: "))
+    email.append(input("Digite o email do aluno: "))
+    matricula.append(input("Digite a matricula do aluno: "))
+    notas1 = int(input("Digite o valor da nota do aluno: "))
+    notas2 = int(input("Digite o valor da nota do aluno: "))
+    notas3 = int(input("Digite o valor da nota do aluno: "))
+    media.append(int((notas1 + notas2 + notas3)/3))
+    
+    if media[i] < 6:
+     notas4 = int(input("Aluno em recuperação, digite o valor da nota: "))
+     media_final = (notas4 + media[i])/2
+     if media_final < 6: 
+        print("Aluno reprovado")
+    else:
+        print("Parabens {}, {} , {} , {}, voce foi aprovado.".format(nome[i], cpf[i], email[i], matricula[i]))
+
+    
+    i = i + 1
