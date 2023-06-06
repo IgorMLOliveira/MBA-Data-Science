@@ -1,0 +1,9 @@
+
+lista = []
+
+for a in range(5):
+    lista.append(input("Digite um nome: "))
+if 'Descomplica' in lista:
+    print("Descomplica")
+else:
+    print(lista)   
